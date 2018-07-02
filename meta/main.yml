@@ -2,13 +2,18 @@ galaxy_info:
   author: madongsheng
   description: Install and config the Qcloud CLI
   company: kaixin001
+  
+  issue_tracker_url: https://github.com/mds1455975151/ansible-tc-cli/issues
+  
   license: license (GPLv2, CC-BY, etc)
   min_ansible_version: 1.2
 
   platforms:
-    - name: CentOS
+    - name: EL
       versions:
         - 6
         - 7
-  galaxy_tags: []
+  galaxy_tags:
+    - qcloud
+    - cli
 dependencies: []
