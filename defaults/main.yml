@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-tc-cli
+tccli_out_format: 'json'
+tccli_region: 'ap-guangzhou'
+tccli_access_key_id: 'xxx'
+tccli_secret_access_key: 'xxx'

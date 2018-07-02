@@ -1,0 +1,14 @@
+galaxy_info:
+  author: madongsheng
+  description: Install and config the Qcloud CLI
+  company: kaixin001
+  license: license (GPLv2, CC-BY, etc)
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: CentOS
+     versions:
+     - 6
+     - 7
+  galaxy_tags: []
+dependencies: []
