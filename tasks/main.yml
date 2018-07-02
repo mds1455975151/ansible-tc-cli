@@ -16,30 +16,29 @@
 - name: create the qcloud config directory
   file:
     path: /root/.tccli
-    state=directory
-    owner=root
-    group=root
-    mode=0755
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
   tags: create_config_dir
 
 - name: copy tccli cli config
-  template: >
-    src=templates/{{ item }}
-    dest=/root/.tccli/{{ item }}
-    owner=root
-    group=root
-    mode=0600
+  template:
+    src: templates/{{ item }}
+    dest: /root/.tccli/{{ item }}
+    owner: root
+    group: root
+    mode: 0600
   with_items:
     - default.configure.j2
     - default.credential.j2
   tags: copy_config_files
 
 - name: copy tccli cli env profile
-  become: 'yes'
-  template: >
-    src=templates/.tcshrc
-    dest=/root/.tcshrc
-    owner=root
-    group=root
-    mode=0600
+  template:
+    src: templates/.tcshrc
+    dest: /root/.tcshrc
+    owner: root
+    group: root
+    mode: 0600
   tags: copy_env_profile
