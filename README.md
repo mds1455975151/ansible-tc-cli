@@ -23,11 +23,12 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 ```
-- hosts: localhost
+- hosts: all
   roles:
     - role: 'mds1455975151.ansible_tc_cli'
       tccli_access_key_id: 'xx'
       tccli_secret_access_key: 'xx'
+      tccli_region: 'xx'
 ```
 License
 -------
