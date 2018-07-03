@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: all
   roles:
     - role: 'mds1455975151.ansible_tc_cli'
       tccli_access_key_id: 'xx'
