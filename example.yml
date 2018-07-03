@@ -3,3 +3,4 @@
     - role: 'mds1455975151.ansible_tc_cli'
       tccli_access_key_id: 'xx'
       tccli_secret_access_key: 'xx'
+      tccli_region: 'xx'
