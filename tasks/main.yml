@@ -30,8 +30,8 @@
     group: root
     mode: 0600
   with_items:
-    - default.configure.j2
-    - default.credential.j2
+    - default.configure
+    - default.credential
   tags: copy_config_files
 
 - name: copy tccli cli env profile
